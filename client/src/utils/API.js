@@ -36,9 +36,7 @@ export default {
 };
 
 
-// http://api.nytimes.com/svc/search/v2/articlesearch.json?q=new+york+times&page=2&sort=oldest&api-key=####
-// e88262a6636844dab3a6290bc470a5c1
-// Built by LucyBot. www.lucybot.com
+
 
 
 // $.ajax({

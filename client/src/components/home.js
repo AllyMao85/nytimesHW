@@ -69,12 +69,7 @@ constructor (props) {
   savearticle = (param) => event =>{
       event.preventDefault();
       console.log(param);
-    //   const data = {
-    //       name: param.name,
-    //       description:param.description,
-    //       weburl:param.weburl
-    //   };
-    //   console.log(data);
+
       API.saveArticles(param)
       .then(res => {
         console.log("added");
