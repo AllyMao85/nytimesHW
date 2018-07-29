@@ -33,14 +33,14 @@ constructor (props) {
     .catch(err => console.log(err));
   }
     
-  displaySavedArticle() {
-    API.getArticles()
-    .then(res => {
-        console.log(res.data);
-        this.setState({ savedArticles: res.data});
-    })
-    .catch(err => console.log(err));
-  }
+//   displaySavedArticle () {
+//     API.getArticles()
+//     .then(res => {
+//         console.log(res.data);
+//         this.setState({ savedArticles: res.data});
+//     })
+//     .catch(err => console.log(err));
+//   }
 
   handleInputChange = event => { 
 
