@@ -15,8 +15,8 @@ if (process.env.NODE_ENV === "production") {
 
 //mongoose.connect("mongodb://AllyMao:mp02h50k@ds223738.mlab.com:23738/heroku_mp02h50k");
 // // If deployed, use the deployed database. Otherwise use the local mongoHeadlines database
-// var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://AllyMao:mp02h50k@ds223738.mlab.com:23738/heroku_mp02h50k";
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
+// var MONGODB_URI = process.env.MONGODB_URI || "mongodb://AllyMao:mp02h50k@ds223738.mlab.com:23738/heroku_mp02h50k";
 // // Connect to the Mongo DB
 mongoose.connect(MONGODB_URI);
 // Define API routes here

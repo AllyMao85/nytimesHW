@@ -23,7 +23,7 @@ constructor (props) {
 }
 
   // When this component mounts, search the Giphy API for pictures of kittens
-  componentDidMount() {
+  componentWillMount() {
     // this.searchGiphy("kittens");
     API.getArticles()
     .then(res => {
@@ -81,6 +81,13 @@ constructor (props) {
         });
        })
     .catch(err => console.log(err));
+
+    API.getArticles()
+    .then(res => {
+        console.log(res.data);
+        this.setState({ savedArticles: res.data});
+    })
+    .catch(err => console.log(err));
   }
 
   deletearticle = (param) => event => {
@@ -92,6 +99,14 @@ constructor (props) {
       
      })
   .catch(err => console.log(err));
+
+
+  API.getArticles()
+    .then(res => {
+        console.log(res.data);
+        this.setState({ savedArticles: res.data});
+    })
+    .catch(err => console.log(err));
   }
 
   render() {
